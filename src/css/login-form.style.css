@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #A9A9A9;
+}
+button {
+    background: #DCDCDC;
+    margin-left: 50%;
+    margin-top: 20%;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 100px;
+}

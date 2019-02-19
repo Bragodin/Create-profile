@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CREATE PROFILE</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="" method="post" id="form">
+        <h1>CREATE PROFILE</h1>
+        <div class="form-main-information">
+            <div> 
+                <div class="preview">    
+                    <img src="" alt="">
+                </div>
+                <input type="file" accept="image/*" id="image" class="hide" onchange="previewFile()">
+                <label for="image">Upload photo</label>
+            </div>
+            <div class="authorization">
+                <input type="text" name="name" placeholder="Name" data-rules="nameOfLength required">
+                <input type="text" name="surname" placeholder="Surname" data-rules="nameOfLength required">
+                <input type="text" name="phone" placeholder="Phone +375(XX)XXX-XX-XX" data-rules="number required">
+            </div>
+        </div>
+        <input type="button" value="Submit" onclick="valid(document.getElementById('form'))">
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+</html>
