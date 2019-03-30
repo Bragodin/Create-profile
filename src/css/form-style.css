@@ -4,7 +4,7 @@
     font-family: 'Helvetica', sans-serif;
     color: #A9A9A9;
 }
-form {
+.form {
     background: #ffffff;
     width: 900px;
     margin: auto;
@@ -16,13 +16,13 @@ form {
     box-shadow: 0 0 10px #A9A9A9;
     margin-top: 90px;
 }
-form div {
+.form .form__information {
     background: #ffffff;
 }
-form .form-main-information {
+.form .form__information {
     display: flex;  
 }
-.preview {
+.form__img {
     width: 150px;
     height: 150px;
     margin-right: 200px;
@@ -30,19 +30,15 @@ form .form-main-information {
     border: #DCDCDC 2px solid;
     border-radius: 50%;
 }
-.preview img {
+.form__img img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
-.hide {
-    position: absolute;
-    z-index: -1;
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
+.form__input_hide {
+    display: none;
 }
-.form-main-information > div > label {
+.form__information > div > label {
     border-radius: 3px;
     padding: 10px 10px;
     margin-left: 17px;
@@ -54,7 +50,7 @@ input[type='button'] {
     padding: 10px 10px;
     background: #DCDCDC;
 }
-.authorization{
+.form__authorization{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -62,7 +58,7 @@ input[type='button'] {
 input::placeholder { 
     color: #DCDCDC; 
 }
-.authorization input{
+.form__authorization input{
     background: #ffffff;
     width: 320px;
     height: 30px;
@@ -70,10 +66,10 @@ input::placeholder {
     border-bottom: 2px #A9A9A9 solid;
     outline: none;
 }
-.authorization input:focus{
+.form__authorization input:focus{
     border-bottom: 2px #DCDCDC solid;
 }
-h1 {
+.form__name {
     background: #ffffff;
 }
 @media screen and (max-width: 400px){
@@ -81,19 +77,19 @@ h1 {
         background: #ffffff;
         text-align: center;
     }
-    form {
+    .form {
         box-shadow: none;
         width: 100%;
         height: 600px;
     }
-    form .form-main-information {
+    .form .form__information {
         display: block;  
         text-align: center;
     }
-    .preview {
+    .form__img {
         margin: 80px 80px;
     }
-    .authorization {
+    .form__authorization {
         margin-top: 60px;
         
     }

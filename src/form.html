@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CREATE PROFILE</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form-style.css">
 </head>
 <body>
-    <form action="" method="post" id="form">
-        <h1>CREATE PROFILE</h1>
-        <div class="form-main-information">
-            <div> 
-                <div class="preview">    
+    <form action="" method="post" id="form" class="form">
+        <h1 class="form__name">CREATE PROFILE</h1>
+        <div class="form__information">
+            <div class="form__preview"> 
+                <div class="form__img">    
                     <img src="" alt="">
                 </div>
-                <input type="file" accept="image/*" id="image" class="hide" onchange="previewFile()">
+                <input type="file" accept="image/*" id="image" class="form__input_hide" onchange="previewFile()">
                 <label for="image">Upload photo</label>
             </div>
-            <div class="authorization">
+            <div class="form__authorization">
                 <input type="text" name="name" placeholder="Name" data-rules="nameOfLength required">
                 <input type="text" name="surname" placeholder="Surname" data-rules="nameOfLength required">
                 <input type="text" name="phone" placeholder="Phone +375(XX)XXX-XX-XX" data-rules="number required">
